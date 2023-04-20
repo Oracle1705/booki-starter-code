@@ -11,17 +11,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- kit fontawesome-->
+    <script src="https://kit.fontawesome.com/481f7dd571.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="main-container">
-        <header></header>
+        <!--Mise en place du header-->
+            <!--top header-->
+        <header>
+            <div class="directionbetween">
+                <div>
+                    <img class="logoBooki" src="./images/logo/Booki.png" alt="logo Booki">
+                </div>   
+                <nav>
+                    <a class="buttoncolorborder button" href="#" >Hébergement</a>
+                    <a class="buttoncolorborder button" href="#" >Activités</a>
+                </nav>
+            </div> 
+                <h2>Trouver votre hébergement pour des vancances de rêve</h2>
+                <p>En plein centre-ville ou en pleine nature</p>
+            <!--Research_bar creation-->
+            <div class="research flexRow">
+                <div class="logoMap Flexcenter backgroundgrey">
+                    <label for="site-search"><i class="fa-solid fa-location-dot"></i></label>
+                </div>
+                <form method="post" action="#">
+                   <input class="researchBar" type="search" value="Marseille.France" id="site-search">
+                </form>
+                <button class="researchbutton">Recherche</button>
+            </div>
+            <!--Filters creation-->
+            <div class="flexRow filtersline"> 
+                <div class="Flexcenter"><h3>Filtres</h3></div>
+                <div class="filtercase Flexcenter FiltersCaseback">
+                    <i class="fa-solid fa-money-bill-wave"></i><h4>Économique</h4>
+                </div>
+                <div class="filtercaseFam Flexcenter FiltersCaseback">
+                    <i class="fa-solid fa-person"></i><h4>Familial</h4>
+                </div>
+                <div class="filtercase Flexcenter FiltersCaseback">
+                    <i class="fa-solid fa-heart"></i><h4>Romantique</h4>
+                </div>
+                <div class="filtercase Flexcenter FiltersCaseback">
+                    <i class="fa-solid fa-fire"></i><h4>Nos pépites</h4>
+                </div>
+            </div>
+            <!--infobar-->
+            <div class=" infobar flexfilters Flexstart">
+                <div class="iconinfo Flexcenter">
+                    <i class=" fa-solid fa-info"></i>
+                </div>
+                <p>Plus de 500 logements sont disponibles dans cette villes</p>           
+            </div>
+       </header>      
         <main>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
-
+                <!--creation cards "hebergements"-->
+                <section id="Hebergement" class="hebergements">
+                        <h2 class="section-title">Hébergement à Marseille</h2>
+                    <article>
+                    </article>
                 </section>
+
+
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -45,6 +99,8 @@
                                 </div>
                             </div>
                         </article>
+
+
                         <article class="card">
                             <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">

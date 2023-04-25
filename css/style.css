@@ -21,6 +21,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 1024px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -50,7 +51,7 @@ body {
 }
 
 .neutralStar {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
 }
 /****** HEADER*******/
 /*headertop*/
@@ -81,7 +82,7 @@ body {
     border-top: 3px solid;
 }
 
-a {
+.headerlink {
     margin-left: 50px;
     padding-top: 7px;
 }
@@ -150,14 +151,14 @@ a {
 
 .filtercase {
     height: 50;
-    width: 180px;
+    width: 170px;
     margin-left: 15px;
     border: solid 2px #D9D9D9;
     border-radius: 50px;
     font-size: 18px;
 }
 
-.filtercaseFam {
+.filtercasefam {
     height: 50;
     width: 130px;
     margin-left: 15px;
@@ -178,6 +179,7 @@ h4 {
 .infobar{
     width: 500px;
     height: 50px;
+    margin-bottom: 30px;
 }
 
 .iconinfo {
@@ -211,7 +213,56 @@ h4 {
     width: 65%;
 }
 
+.cardselection {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.cardlink {
+    text-decoration: none;
+    color:black
+}
+
+.linkmore {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+
+.hebergements-cards .card:hover {
+    box-shadow: 0px 3px 15px rgba(0,0, 0, 0.2) 
+}
+
+.hebergements-cards img  {
+    width: 240px;
+    height: 110px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    width: 80%;
+    padding-left: 15px;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-top: 8px;
+}
 
 /****** Populaires ***********/
 .populaires {
@@ -258,6 +309,80 @@ h4 {
     margin-bottom: 5px;
 }
 
+/*Activités a Marseille*/
+.Activite {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.Activite .card:hover {
+    box-shadow: 0px 3px 15px rgba(0,0, 0, 0.2) 
+}
+
+.Activite .cardselectionactivite {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Activite .card {
+    padding: 0;
+}
+    
+.Activite img {
+    width: 298PX;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+
+.Activite .card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+/*FOOTER*/
+.Footer {
+    width: 100%;
+    height: auto;
+    background-color: #F2F2F2;
+    padding: 15px;
+    margin-top: 55px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.Footercase {
+    width: 446px;
+}
+
+.Footer-title { 
+    margin: 0;
+}
+
+.linkfooter {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+   
 
 
 
